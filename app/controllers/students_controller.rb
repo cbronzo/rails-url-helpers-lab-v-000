@@ -9,7 +9,6 @@ class StudentsController < ApplicationController
     @student = Student.find(params[:id])
   end
 
-  private
 
     def set_student
       @student = Student.find(params[:id])
@@ -21,6 +20,8 @@ class StudentsController < ApplicationController
       @student.save
       redirect_to student_path(@student)
     end
-        
+      
+      
+        private  
     
 end
